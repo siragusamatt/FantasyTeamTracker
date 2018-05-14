@@ -1,0 +1,160 @@
+<div class="page">
+
+  <header>
+    <h1 class="myteam">News</h1>
+      <a href="home"><i class="material-icons" id ="home">group</i></a>
+      <a href="trending"><i class="material-icons" id="trending">trending_up</i></a>
+      <a href="news"><i class="material-icons" id="news">note</i></a>
+  </header>
+
+
+  <div class="article" onclick="readArticle()">
+
+        <img src="assets/broncos_kicker.jpg">
+
+
+      <h3><strong>New extra point rule affecting kickers league-wide</strong></h3>
+      <br>
+      <p class="content" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+         mollit anim id est laborum.
+      </p>
+  </div>
+
+  <div class="article" onclick="readArticle2()">
+
+        <img src="assets/e_thomas.jpg">
+
+        <h3><strong>Earl Thomas placed on IR by Seahawks</strong></h3>
+        <br>
+        <p class="content2" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+  </div>
+
+  <div class="article" onclick="readArticle3()">
+
+        <img src="assets/t_brady.jpg">
+
+        <h3><strong>How Gronk's absence will effect Tom Brady</strong></h3>
+        <br>
+        <p class="content3" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+  </div>
+
+  <div class="article" onclick="readArticle4()">
+
+        <img src="assets/s_watkins.jpg">
+
+        <h3><strong>Sammy Watkins returns to practice Tuesday</strong></h3>
+        <br>
+        <p class="content4" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+  </div>
+
+  <div class="article" onclick="readArticle5()">
+
+        <img src="assets/j_flacco.jpg">
+
+        <h3><strong>Week 14 Waiver Wire</strong></h3>
+        <br>
+        <p class="content5" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+  </div>
+
+
+
+
+</div>
+
+<script>
+  function readArticle() {
+    $.get('ajax-read-article')
+    .then(data => {
+      if($('.content').is(":hidden")) {
+        $('.content').slideDown("fast");
+      } else {
+        $('.content').slideUp("fast");
+      }
+    })
+  }
+
+  function readArticle2() {
+    $.get('ajax-read-article')
+    .then(data => {
+      if($('.content2').is(":hidden")) {
+        $('.content2').slideDown("fast");
+      } else {
+        $('.content2').slideUp("fast");
+      }
+    })
+  }
+
+  function readArticle3() {
+    $.get('ajax-read-article')
+    .then(data => {
+      if($('.content3').is(":hidden")) {
+        $('.content3').slideDown("fast");
+      } else {
+        $('.content3').slideUp("fast");
+      }
+    })
+  }
+
+  function readArticle4() {
+    $.get('ajax-read-article')
+    .then(data => {
+      if($('.content4').is(":hidden")) {
+        $('.content4').slideDown("fast");
+      } else {
+        $('.content4').slideUp("fast");
+      }
+    })
+  }
+
+  function readArticle5() {
+    $.get('ajax-read-article')
+    .then(data => {
+      if($('.content5').is(":hidden")) {
+        $('.content5').slideDown("fast");
+      } else {
+        $('.content5').slideUp("fast");
+      }
+    })
+  }
+
+
+
+</script>
