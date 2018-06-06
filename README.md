@@ -1,24 +1,16 @@
-# README
+# Fantasy Team Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was created as a front-end application to demonstrate good UI design and human-computer interaction.
+This app does not yet have back-end functionality.
 
-Things you may want to cover:
+The main languages used were Ruby on Rails, HTML, CSS, JavaScript and AJAX.
 
-* Ruby version
+Since this was designed as a mobile application, there are a few steps to take in order to view it in Chrome on a phone view:
 
-* System dependencies
+* Right click anywhere on the page and click 'Inspect'
 
-* Configuration
+* On the top right, click the 'Toggle Device Toolbar button'
 
-* Database creation
+* On the top middle, change the device from 'Responsive' to one of the provided devices in the dropdown.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thank you for viewing this application!
